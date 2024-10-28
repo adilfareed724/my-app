@@ -5,9 +5,9 @@ export default function About() {
     color: "black",
     backgroundColor: "white",
   });
-  const [btntext, setBtnText] = useState("enable dark mode");
+  const [ setBtnText] = useState("enable dark mode");
   const toggleStyle = () => {
-    if (mystyle.color == "black") {
+    if (mystyle.color === "black") {
       setmysyle({
         color: "white",
         backgroundColor: "black",
@@ -15,8 +15,8 @@ export default function About() {
       setBtnText("enable dark mode")
     } else
       setmysyle({
-        color: "black",
-        backgroundColor: "white",
+        color: "white",
+        backgroundColor: "DARK",
       });
     setBtnText(" enable light mode")
   };
@@ -124,15 +124,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="box2">
-        <button
-          onClick={toggleStyle}
-          class="btn btn-outline-success"
-          type="submit"
-        >
-          {btntext}
-        </button>
-      </div>
+     
     </>
   );
 }

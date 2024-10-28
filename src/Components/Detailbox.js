@@ -35,9 +35,9 @@ export default function Foam(props) {
           id="exampleFormControlTextarea1"value={Text} onChange={handleOnchange}
           rows="8"
           ></textarea>
-      <button type="submit" class="btn btn-primary mx-3 my-2 " onClick={handelClearClick}>Clear Text</button >
-      <button type="submit" class="btn btn-primary mx-3 my-2" onClick={handeluppercase}>Convert touppercase</button>
-      <button type="submit" class="btn btn-primary mx-3 my-2" onClick={handellowercasek}>convert tolowercase</button>
+      <button type="submit" class="btn btn-primary mx-3 my-3 " onClick={handelClearClick}>Clear Text</button >
+      <button type="submit" class="btn btn-primary mx-3 my-3" onClick={handeluppercase}>Convert touppercase</button>
+      <button type="submit" class="btn btn-primary mx-3 my-3" onClick={handellowercasek}>convert tolowercase</button>
       </div>
       <div className="container ">
           <h4>Your Text Counter</h4>
